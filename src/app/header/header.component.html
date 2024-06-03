@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="logo-menu">
+    <button class="menu-button">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="logo">
+      <img src="assets/Radisson-Logo.jpg" alt="Logo" routerLink="/home">
+    </div>
+  </div>
+  
+  <nav class="nav-links">
+    <a>Destinations</a>
+    <a>Resorts</a>
+    <a>Meetings & Events</a>
+    <a>Deals</a>
+    <a>My reservations</a>
+  </nav>
+  <div class="header-buttons">
+    <button class="language-button" routerLink="/languages">
+      <mat-icon>language</mat-icon> {{ selectedLanguage }} | <mat-icon>attach_money</mat-icon>{{ selectedCurrency }}    
+    </button>
+    <button class="sign-in-button" routerLink="/login">SIGN IN</button>
+  </div>
+</header>
+

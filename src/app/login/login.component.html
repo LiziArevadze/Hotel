@@ -1,0 +1,24 @@
+<div class="forma">
+        <div class="Content">
+          <div class="WelcomeText">Welcome to Radisson Rewards</div>
+          <div class="SignText">Sign into your account</div>
+          <div class="Form">
+            <div class="InputField">
+              <input type="email" placeholder="e.g. name@email.com" [(ngModel)]="email">
+            </div>
+            <div class="InputField">
+              <input type="password" placeholder="Password" [(ngModel)]="password">
+            </div>
+            <div class="InputMessage" [ngStyle]="{color: message != '' ? 'red' : 'green', 'margin-bottom.px': message != '' ? 10 : 0}">{{ message }}</div>
+            <div class="Button">
+              <button class="Button" type="button" (click)="onSubmit()" style="margin-top: 15px;">SIGN IN</button>
+            </div>
+            
+            <div class="SignUpButton"><a href="/register" class="link-info">Activate your account</a><mat-icon>arrow_forward</mat-icon>
+            </div>
+      </div>
+  
+      <div class="Thumbnail">
+          <img src="assets/login_img.jpg" alt="img">
+      </div>
+  

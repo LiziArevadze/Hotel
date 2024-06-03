@@ -1,0 +1,78 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<div class="search-container">
+  <div class="form-group">
+    <div class="search1-group">
+      <input type="text" id="destination" placeholder="Where are you going? Destination or hotel">
+    </div>
+    <div class="search-group">
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" placeholder=" ">
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" placeholder=" ">
+    </div>
+    <button type="button" class="search-button">
+      <mat-icon class="icon">search</mat-icon> Search
+    </button>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="slide-wrapper">
+    <div class="slide">
+    <img src="assets/building.jpg" alt="image1">
+  </div>
+  <div class="slide">
+    <img src="assets/food.jpg" alt="image2">
+  </div>
+  <div class="slide">
+    <img src="assets/radisson-blu-spa-relax-utsikt-trysil.jpg" alt="image3">
+    </div>
+    <div class="slide">
+      <img src="assets/radisson.jpg" alt="image4">
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="pic-container">
+    <img src="assets/book.jpg" alt="imageB">
+  </div>
+<div class="pic-text">
+  <h1 style="font-weight: 300;">The Charm of Georgia</h1>
+  <p style="font-weight: 200;">Experience the fusion of history and modernity at Radisson RED Tbilisi</p>
+  <div class="button-container">
+    <button type="button" class="book-button">BOOK NOW</button>
+    </div>
+</div>
+</div>
+
+    
+  <div class="benefits-text">
+    <h1>Enjoy the exclusive benefits</h1>
+    <p>As a Radisson Rewards member, you enjoy exclusive benefits. You collect points that you can use to enhance your travel experience or to pay for your booking. Join for free and elevate your stay!</p>
+  </div>
+  <div class="buttons-container">
+    <button type="button" class="discover-button">DISCOVER MORE BENEFITS</button>
+    <button type="button" class="member-button" routerLink="/register">BECOME A MEMBER</button>
+    </div>
+
+    <div class="icons-container">
+    <div class="MemberOnly">
+      <i class='fab fa-cc-amex' style='font-size:48px;color:black'></i>
+      <h2>Member Only Rate</h2>
+      <p>Members get up to 10% discount</p>
+    </div>
+    <div class="FoodAndBeverages">
+      <i class='fas fa-pizza-slice' style='font-size:48px;color:black '></i>
+      <h2>Discount on Food and Beverages</h2>
+      <p>Discount on Food and Beverages</p>
+    </div>
+    <div class="PriorityLine">
+      <i class='fas fa-id-card' style='font-size:48px;color:black'></i>
+      <h2>Priority Line</h2>
+      <p>Save waiting time with access to Priority Line</p>
+    </div>
+  </div>
+<app-footer></app-footer>

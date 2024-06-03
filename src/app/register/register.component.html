@@ -1,0 +1,22 @@
+<div class="forma">
+                <div class="WelcomeText">Activate your account</div>
+                <form class="Form" (submit)="onSubmit()">
+                    <div class="InputField">
+                        <input type="text" placeholder="First Name" [(ngModel)]="name" name="name" required>
+                    </div>
+                    <div class="InputField">
+                        <input type="text" placeholder="Last Name" [(ngModel)]="lastname" name="lastname" required>
+                    </div>
+                    <div class="InputField">
+                        <input type="email" placeholder="Email Address" [(ngModel)]="email" name="email" required>
+                    </div>
+                    <div class="InputField"> 
+                        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+                    </div>
+                    <div class="InputField">
+                        <input type="password" id="confirmPassword" placeholder="Type the password again." [(ngModel)]="confirmPassword" name="confirmPassword" required>
+                      </div>
+                    <div class="InputMessage" *ngIf="errorMessage" [ngStyle]="{color: 'red', 'margin-bottom.px': 8}">{{ errorMessage }}</div>
+                    <button class="Button Primary" type="submit" style="height: fit-content;">Continue</button>
+                </form>
+            </div>

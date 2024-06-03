@@ -1,0 +1,267 @@
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: auto;
+  height: 100px;
+  background-color: #29343D;
+  padding: 10px;
+  z-index: 1000; 
+}
+
+
+.form-group {
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;  
+  height: 65px;
+  width: 1300px;
+  background-color: white;
+}
+
+
+.search1-group input{
+  width: 270px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.search-group {
+  flex-grow: 1;
+  margin-left: 150px;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+}
+
+.dates label {
+  margin-right: 5px;
+}
+
+.dates input {
+  margin-right: 10px;
+}
+
+.search-button {
+  border: none; 
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 48px;  
+  margin-right: 20px;  
+  width: 245px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  font-size: 20px; 
+  font-weight: bold;
+  background-color: #B61A20;
+  color: white;
+}
+.search-button:hover{
+  background-color: #8c1217;
+}
+
+.icon {
+  margin-right: 10px; 
+  
+}
+
+@media (max-width: 1200px) {
+  .form-group {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-group, .dates {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+.search1-group input,
+.search-group input {
+  border: none; 
+  padding: 5px; 
+  outline: none; 
+}
+
+.slideshow-container {
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  float: left;
+  height: 500px;
+  width: 800px;
+}
+
+
+.slide img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  filter: brightness(60%);
+}
+
+.slide-wrapper {
+  width: calc(800px * 4);
+  animation: slide 15s ease-in-out infinite;
+}
+
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  40% {
+    margin-left: calc(-800px * 1);
+  }
+  60% {
+    margin-left: calc(-800px * 2); 
+  }
+
+}
+.container {
+  display: flex; 
+  margin-top: 70px;
+  align-items: flex-start; 
+}
+
+.pic-text {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+.pic-container {
+  margin-left: 100px;
+}
+
+.pic-container img {
+  border-radius: 10px; 
+}
+
+
+.book-button {
+  background-color: #B61A20;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 16px 30px; 
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px; 
+  margin-top: 10px;  
+}
+.book-button:hover {
+  background-color: #911317;
+}
+
+.buttons-container, .benefits-text{
+ display: inline-block; 
+}
+
+.buttons-container{
+  display: flex;
+  gap: 10px;
+  margin-left: 950px;
+}
+
+.discover-button,
+.member-button {
+  display: flex;
+  padding: 10px 25px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+  height: 40px; 
+  width: auto;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.member-button:hover {
+  background-color: #503b6d; 
+}
+.discover-button:hover{
+  background-color: black;
+  color: white;
+}
+
+.member-button {
+  color: white;
+  background-color: #68478D;
+  border: none;
+}
+
+.benefits-text {
+  flex: 1;
+  margin-left: 100px;
+  margin-top: 100px;
+
+}
+
+.benefits-text h1 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.benefits-text p {
+  text-align: left;
+  font-weight: 200;
+  font-size: 20px;
+}
+.MemberOnly, .FoodAndBeverages, .PriorityLine{
+  display: inline-block;
+  margin-left: 40px;
+  border: 2px solid #D8D8D8;
+  border-radius: 5px;
+  width: 400px;
+  padding: 20px;
+  height: 150px;
+  align-items: center;
+}
+
+.MemberOnly h2,
+.FoodAndBeverages h2,
+.PriorityLine h2,
+.MemberOnly p,
+.FoodAndBeverages p,
+.PriorityLine p {
+  font-size: 16px; 
+  text-align: left;
+}
+
+.icons-container{
+  margin-top: 80px;
+  margin-left: 30px;
+}

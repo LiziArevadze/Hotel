@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="Forma">
+  <div class="Formacontent">
+    <span class="close"></span>
+    <h2>{{ 'Language and Currency' | translate }}</h2>
+    <div class="Formabody">
+      <div class="Formaitem1">
+        <mat-icon>language</mat-icon>
+        <div class="FormaLanguage">
+          <label>{{ 'Language' | translate }}</label>
+          <select [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
+            <option *ngFor="let language of languages" [value]="language">{{ language }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="Formaitem2">
+        <mat-icon>attach_money</mat-icon>
+        <div class="FormaCurrency">
+          <label>{{ 'Currency' | translate }}</label>
+          <select [(ngModel)]="selectedCurrency" (change)="changeCurrency()">
+            <option *ngFor="let currency of currencies" [value]="currency.code">
+              {{ currency.code }} - {{ currency.name }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

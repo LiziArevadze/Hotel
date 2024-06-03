@@ -1,0 +1,66 @@
+.Forma {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+  width: 800px;
+}
+
+.Formacontent {
+  background-color: white;
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.Formabody {
+  margin-top: 30px; 
+}
+
+.Formaitem1,
+.Formaitem2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.Formaitem1 mat-icon,
+.Formaitem2 mat-icon {
+  margin-right: 15px; 
+}
+
+.FormaLanguage,
+.FormaCurrency {
+  flex: 1; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+.FormaLanguage label,
+.FormaCurrency label {
+  color: #656565;
+  margin-left: 15px;
+}
+.FormaCurrency label {
+  margin-top: 10px;
+}  
+
+.FormaLanguage select,
+.FormaCurrency select {
+  width: 100%;
+  padding: 12px; 
+  font-size: 18px; 
+  border: none;
+  border-radius: 5px;
+  color: #656565;
+  font-weight: bold;
+  outline: none; 
+}
+
+.FormaLanguage select:focus,
+.FormaCurrency select:focus {
+  outline: none; 
+}
+
